@@ -39,7 +39,7 @@ can call first data by FP_data(1,1:150).
 
 . These arrays are used for running the PPG verification system. You can see the train and test data with their labels. 
 
-. In train_data and test_data, they are 3D array where the first dimension is the number of data, the second one is the number of samples and the third one is the input (in order: DTW, TP, FP, Cubic). It is concatenated sequentially with subject ID and each subject has 120 data for train set and 24 data for test set. train_label and test_label have label information (i.e. subject ID) with same order as train_data and test_data, respectively. Please note that the size of test data in here is smaller than the one used in paper since we want to secure our dataset. You can get the full access by emailing the one of above emails.  
+. In train_data and test_data, they are 3D array where the first dimension is the number of data, the second one is the number of samples and the third one is the input (in order: DTW, TP, FP, Cubic). It is concatenated sequentially with subject ID and each subject has 120 data for train set and 24 data for test set. train_label and test_label have label information (i.e. subject ID) with same order as train_data and test_data, respectively. Please note that the size of test data in here is smaller than the one used in paper since we want to secure our dataset. You can get the full access by emailing the one of the above emails.  
 
 Ex. To access one of subject 1’s DTW data in train set, run train_data(1,1:150,1). The label will be train_label(1).
 
