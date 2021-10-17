@@ -4,9 +4,8 @@ Here, we introduce the implementation of the proposed PPG verification system an
 
 There are three files included in the code & data appendix. Each files will be explained in detail.
 
-```diff
-1 - Subset_Biosec3.mat
-```
+**Bold Text**
+__1 - Subset_Biosec3.mat__
 
 . This file contains raw PPG data and the preprocessed PPG data which are necessary for running the codes. It is a subset of Biosec3 database with 20 subjects. Thus, performances obtained with this subset of data are different from the ones in the paper.
 
