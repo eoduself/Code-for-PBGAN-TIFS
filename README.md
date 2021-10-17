@@ -19,7 +19,7 @@ TROIKA: https://sites.google.com/site/researchbyzhang/ieeespcup2015
 Biosec1: https://www.comm.utoronto.ca/~biometrics/PPG_Dataset/index.html
 
 - Original_Data cell array
-- 
+
 . It has the raw PPG data before preprocessing. You can use it for observing the raw PPG signals.
 
 . It is 3D cell array where the first dimension shows subject ID, the second one means the measurement trial in each session and the third one describes the session. 
