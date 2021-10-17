@@ -18,8 +18,6 @@ TROIKA: https://sites.google.com/site/researchbyzhang/ieeespcup2015
 
 Biosec1: https://www.comm.utoronto.ca/~biometrics/PPG_Dataset/index.html
 
-Biosec3: 
-
 - Original_Data cell array
 
 . It has the raw PPG data before preprocessing. You can use it for observing the raw PPG signals.
