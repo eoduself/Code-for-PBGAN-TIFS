@@ -6,7 +6,7 @@ There are three files included in the code & data appendix. Each files will be e
 
 **1 - Subset_Biosec3.mat**
 
-. This file contains raw PPG data and the preprocessed PPG data which are necessary for running the codes. It is a subset of Biosec3 database with 20 subjects. Thus, performances obtained with this subset of data are different from the ones in the paper.
+. This file contains raw PPG data and the preprocessed PPG data which are necessary for running the codes. It is a subset of Biosec3 database with 20 subjects. Thus, performances obtained with this subset of data are different from the ones in the paper. For full access, please email to daeyon.hwang@mail.utoronto.ca or dimitris@comm.utoronto.ca
 
 . Biosec3 was collected in an uncontrolled environment (i.e. usual office environment) and participants could talk during measurement. All participants have no history of heart diseases. 
 
@@ -17,6 +17,8 @@ PRRB: https://dataverse.scholarsportal.info/dataset.xhtml?persistentId=doi:10.56
 TROIKA: https://sites.google.com/site/researchbyzhang/ieeespcup2015
 
 Biosec1: https://www.comm.utoronto.ca/~biometrics/PPG_Dataset/index.html
+
+Biosec3: 
 
 - Original_Data cell array
 
@@ -39,7 +41,7 @@ can call first data by FP_data(1,1:150).
 
 . These arrays are used for running the PPG verification system. You can see the train and test data with their labels. 
 
-. In train_data and test_data, they are 3D array where the first dimension is the number of data, the second one is the number of samples and the third one is the input (in order: DTW, TP, FP, Cubic). It is concatenated sequentially with subject ID and each subject has 120 data for train set and 24 data for test set. train_label and test_label have label information (i.e. subject ID) with same order as train_data and test_data, respectively. 
+. In train_data and test_data, they are 3D array where the first dimension is the number of data, the second one is the number of samples and the third one is the input (in order: DTW, TP, FP, Cubic). It is concatenated sequentially with subject ID and each subject has 120 data for train set and 24 data for test set. train_label and test_label have label information (i.e. subject ID) with same order as train_data and test_data, respectively. Please note that the size of test data in here is smaller than the one used in paper since we want to secure our dataset. You can get the full access by emailing the one of above emails.  
 
 Ex. To access one of subject 1’s DTW data in train set, run train_data(1,1:150,1). The label will be train_label(1).
 
@@ -72,6 +74,7 @@ Ex. To access one of subject 2’s TP synthetic data, run PBGAN_DC_syn(121,1:150
 . You can find the sample result inside the code. The sample result was run by original DCGAN with Cubic input. To explore other results, search the ‘Set Target ID, GAN, PBGAN, Input’ and change the variables ‘ID’, ‘GAN_model’, ‘PBGAN’, ‘Data’. All details about setting up values in these variables are explained by comments.
 
 . Subset_Biosec3.mat should be located in the same directory to run the code.
+
 
 
 
